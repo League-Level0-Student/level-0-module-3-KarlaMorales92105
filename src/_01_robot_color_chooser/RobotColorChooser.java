@@ -20,11 +20,11 @@ public class RobotColorChooser {
 		dani.setPenColor(Color.red);
 		}
 		
-		if(color.equalsIgnoreCase("blue")) {
+		else if(color.equalsIgnoreCase("blue")) {
 		dani.setPenColor(Color.blue);	
 		}
 		
-		if(color.equalsIgnoreCase("green")) {
+		else if(color.equalsIgnoreCase("green")) {
 		dani.setPenColor(Color.green);
 		}
         //6. If the user doesn’t enter anything, choose a random color
