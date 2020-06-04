@@ -8,7 +8,7 @@ int speed=1;
 int xtwo=750;
 int speedtwo= -1;
 void draw() {
-background(#8EF707);
+background(#65A8BC);
   
 for( int circles=10; circles>=1; circles--) {
   
@@ -31,5 +31,13 @@ for( int circles= 10; circles>=1; circles--){
 
 ellipse(xtwo,250,50*circles,50*circles);
 }
+xtwo+= speedtwo;
 
+if (xtwo>= width){
+  speedtwo= -speed;
 }
+else if( xtwo<=0) {
+  speedtwo= -speed;
+}
+
+  }
